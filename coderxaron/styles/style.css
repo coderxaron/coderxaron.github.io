@@ -1,0 +1,180 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: rgb(24, 24, 66);
+}
+
+.ctx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 0; 
+    background-color: #15182b;
+    padding-bottom: 1cm;
+    border-radius: 0.3cm;
+    width: 15cm;
+    border: solid;
+    border-color: rgb(37, 29, 86);
+}
+
+img {
+    width: 5cm;
+    border-radius: 3cm;
+    height: 5cm;
+    border: solid;
+    border-color: rgb(30, 23, 73);
+}
+
+h3 {
+    color: whitesmoke;
+    font-size: xx-large;
+}
+
+#lnk {
+    color: lightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#lnk:hover {
+    color: rgb(190, 216, 224);
+}
+
+#time {
+    background-color: rgb(196, 196, 196);
+    text-align: center;
+    padding: 0.1cm;
+    font-size: x-large;
+    border: solid;
+    border-color: #061a2c;
+}
+
+.nav {
+  /*background-color: #070a14;*/
+  background-color: #070a14;
+  border: solid;
+  border-color:  rgb(37, 29, 86);
+  overflow: hidden;
+  left: 0;
+  right: 0;
+}
+
+.nav a {
+  float: left;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 0.5cm;
+}
+
+.nav a:hover {
+    background-color: rgb(33, 32, 32);
+    cursor: pointer;
+}
+
+input {
+    color: white;
+    background-color: #072a49;
+    border: solid;
+    border-color: rgb(37, 29, 86);
+    height: 0.6cm;
+    border-radius: 0.1cm;
+    margin-bottom: 0.1cm;
+    width: 4.7cm;
+}
+
+textarea {
+    color: white;
+    background-color: #072a49;
+    border: solid;
+    border-color: rgb(37, 29, 86);
+    height: 1cm;
+}
+
+#submit {
+    margin-top: 0.1cm;
+    border: solid;
+    border-color: rgb(37, 29, 86);
+    height: 1cm;
+    width: 5cm;
+    color: white;
+    background-color: #000407;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #01111d;
+}
+
+#cb {
+    border: solid;
+    border-color: black;
+}
+
+#eod {
+    color: white;
+    margin-bottom: 0.2cm;
+}
+
+#msglab {
+    color: white;
+    margin-bottom: 0.2cm;
+    margin-top: 0.2cm;
+}
+
+#pplab {
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+#pp {
+    margin:0;
+    color: white;
+}
+
+#toplangs {
+    color: white;
+}
+
+ul {
+    color: white;
+}
+
+bottomspace {
+    margin-bottom: 0.1cm;
+}
+
+#time {
+    margin-top: 0.1cm;
+}
+
+#link {
+    color: white;
+}
+
+#vm {
+    color: white;
+    margin-top: 0.1cm;
+}
+
+#gd {
+    margin-top: 0;
+    margin-bottom: 0.2cm;
+}
+
+#infa {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0.1cm;
+}
+
+#infb {
+    color: white;
+    margin-top: 0cm;
+    margin-bottom: 0.2cm;
+}
