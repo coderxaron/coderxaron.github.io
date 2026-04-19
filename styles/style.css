@@ -1,74 +1,23 @@
-html {
-  scroll-behavior: smooth;
-}
-
-
 body {
     background-color: rgb(24, 24, 66);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.ctx {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 40px auto 0; 
-    background-color: #15182b;
-    padding-bottom: 1cm;
-    border-radius: 0.3cm;
-    width: 15cm;
-    border: solid;
-    border-color: rgb(37, 29, 86);
-}
-
-#pfp {
-    width: 5cm;
-    border-radius: 3cm;
-    height: 5cm;
-    border: solid;
-    border-color: rgb(30, 23, 73);
-}
-
-h3 {
-    color: whitesmoke;
-    font-size: xx-large;
-}
-
-#lnk {
-    color: lightblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#lnk:hover {
-    color: rgb(190, 216, 224);
-}
-
-#time {
-    background-color: rgb(196, 196, 196);
-    text-align: center;
-    padding: 0.1cm;
-    font-size: x-large;
-    border: solid;
-    border-color: #061a2c;
-}
 
 .nav {
-  /*background-color: #070a14;*/
-  background-color: #070a14;
-  border: solid;
-  border-color:  rgb(37, 29, 86);
-  overflow: hidden;
-  left: 0;
-  right: 0;
+    background-color: #070a14;
+    border-bottom: 1px solid rgb(37, 29, 86);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav a {
-  float: left;
-  color: whitesmoke;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 0.5cm;
+    color: whitesmoke;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .nav a:hover {
@@ -76,105 +25,113 @@ h3 {
     cursor: pointer;
 }
 
-input {
-    color: white;
-    background-color: #072a49;
-    border: solid;
-    border-color: rgb(37, 29, 86);
-    height: 0.6cm;
-    border-radius: 0.1cm;
-    margin-bottom: 0.1cm;
-    width: 4.7cm;
+.ctx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    background-color: #15182b;
+    padding: 25px 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 700px;
+    border: 1px solid rgb(37, 29, 86);
 }
 
-textarea {
-    color: white;
-    background-color: #072a49;
-    border: solid;
-    border-color: rgb(37, 29, 86);
-    height: 1cm;
+#pfp {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid rgb(30, 23, 73);
+    object-fit: cover;
+    margin-top: 10px;
 }
 
-#submit {
-    margin-top: 0.1cm;
-    border: solid;
-    border-color: rgb(37, 29, 86);
-    height: 1cm;
-    width: 5cm;
-    color: white;
-    background-color: #000407;
+h1, h2, h3 {
+    color: whitesmoke;
+    margin: 10px 0;
 }
 
-#submit:hover {
-    cursor: pointer;
-    background-color: #01111d;
-}
-
-#cb {
-    border: solid;
-    border-color: black;
-}
-
-#eod {
-    color: white;
-    margin-bottom: 0.2cm;
-}
-
-#msglab {
-    color: white;
-    margin-bottom: 0.2cm;
-    margin-top: 0.2cm;
-}
-
-#pplab {
-    display:flex;
-    align-items:center;
-    gap:8px;
-}
-
-#pp {
-    margin:0;
-    color: white;
-}
-
-#toplangs {
-    color: white;
+.tagline {
+    color: #ccc;
+    text-align: center;
+    max-width: 500px;
 }
 
 ul {
     color: white;
+    padding-left: 20px;
 }
 
-bottomspace {
-    margin-bottom: 0.1cm;
+#tz {
+    color: lightgray;
+    margin-top: 5px;
 }
 
-#time {
-    margin-top: 0.1cm;
-}
-
-#link {
+.project {
+    background-color: #15182b;
+    border: 1px solid rgb(37, 29, 86);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 700px;
     color: white;
+    text-align: center;
 }
 
-#vm {
+a {
+    color: lightblue;
+}
+
+a:hover {
+    color: rgb(190, 216, 224);
+}
+
+.commands {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
     color: white;
-    margin-top: 0.1cm;
+    background-color: #072a49;
+    border: 1px solid rgb(37, 29, 86);
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
 }
 
-#gd {
-    margin-top: 0;
-    margin-bottom: 0.2cm;
+textarea {
+    min-height: 100px;
+    resize: vertical;
 }
 
-#infa {
+button {
+    border: 1px solid rgb(37, 29, 86);
+    padding: 10px 20px;
     color: white;
-    margin-top: 0;
-    margin-bottom: 0.1cm;
+    background-color: #000407;
 }
 
-#infb {
+button:hover {
+    cursor: pointer;
+    background-color: #01111d;
+}
+
+label {
     color: white;
-    margin-top: 0cm;
-    margin-bottom: 0.2cm;
+    margin-top: 10px;
+}
+
+#contact-info {
+    color: white;
 }
