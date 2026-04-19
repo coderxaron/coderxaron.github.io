@@ -36,6 +36,7 @@ body {
     width: 90%;
     max-width: 700px;
     border: 1px solid rgb(37, 29, 86);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #pfp {
@@ -78,6 +79,7 @@ ul {
     max-width: 700px;
     color: white;
     text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 a {
@@ -134,4 +136,17 @@ label {
 
 #contact-info {
     color: white;
+}
+
+.ctx:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgb(37, 29, 86);
+}
+
+.project:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: 2px solid rgb(37, 29, 86);
 }
