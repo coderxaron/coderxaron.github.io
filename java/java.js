@@ -55,3 +55,18 @@ form.addEventListener("submit", async (e) => {
     button.disabled = false;
     button.innerText = "Submit";
 });
+
+
+
+// small easter egg : ) 
+let Buffer = "";
+document.addEventListener('keydown', (e) => {
+    
+    if (e.key.length === 1) {
+        Buffer += e.key.toLowerCase();
+        if (coderxaronBuffer.length > 10) { coderxaronBuffer = coderxaronBuffer.slice(-10); }
+        if (coderxaronBuffer === "fatal") { window.location.href = "https://realshadowledgend.github.io/FatalQuackers.github.io/"; }
+    }
+});
+
+// shoutout do fatal! : ) 
