@@ -1,0 +1,197 @@
+body {
+    background-color: rgb(24, 24, 66);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.nav {
+    background-color: #070a14;
+    border-bottom: 1px solid rgb(37, 29, 86);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: whitesmoke;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    background-color: rgb(33, 32, 32);
+    cursor: pointer;
+}
+
+.ctx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    background-color: #15182b;
+    padding: 25px 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 700px;
+    border: 1px solid rgb(37, 29, 86);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#pfp {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid rgb(30, 23, 73);
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+h1, h2, h3 {
+    color: whitesmoke;
+    margin: 10px 0;
+}
+
+.tagline {
+    color: #ccc;
+    text-align: center;
+    max-width: 500px;
+}
+
+ul {
+    color: white;
+    padding-left: 20px;
+}
+
+#tz {
+    color: lightgray;
+    margin-top: 5px;
+}
+
+.project {
+    background-color: #15182b;
+    border: 1px solid rgb(37, 29, 86);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 700px;
+    color: white;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a {
+    color: lightblue;
+}
+
+a:hover {
+    color: rgb(190, 216, 224);
+}
+
+.commands {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    color: white;
+    background-color: #072a49;
+    border: 1px solid rgb(37, 29, 86);
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    border: 1px solid rgb(37, 29, 86);
+    padding: 10px 20px;
+    color: white;
+    background-color: #000407;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #01111d;
+}
+
+label {
+    color: white;
+    margin-top: 10px;
+}
+
+#contact-info {
+    color: white;
+}
+
+.ctx:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgb(37, 29, 86);
+}
+
+.project:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: 2px solid rgb(37, 29, 86);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #0f1222;
+    border-radius: 8px;
+    border: 1px solid rgb(37, 29, 86);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+    .nav a {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .ctx, .project {
+        width: 95%;
+    }
+
+    #pfp {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.info {
+    color: white;
+    margin-top: 10px;
+}

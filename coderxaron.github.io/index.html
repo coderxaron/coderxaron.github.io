@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coderxaron's Website</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+
+    <!-- If you're reading this, hire me -->
+    
+
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#abtme">About</a>
+        <a href="#Timezone">My Timezone</a>
+        <a href="#Projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav> 
+
+
+    <section class="ctx" id="home">
+        <h1>Coderxaron</h1>
+        <p class="tagline">Roblox / Web Developer I build systems, UI and tools that are designed to scale and stay maintainable.</p>
+        <p class="info">600k+ visits across projects</p>
+        <p class="info">340 peak CCU</p>
+        <p class="info">Open for <a href="#contact">commissions / collaborations</a></p>
+        <img id="pfp" alt="Profile picture of Coderxaron" src="img/coderxaron.png">
+    </section>
+
+
+    <div id="abtme" class="ctx">
+        <h2 id="toplangs">What I Work With:</h2>
+        <ul>
+            <li>Lua (Roblox Studio) -- Systems and UI</li>
+            <li>JavaScript (tools / applications)</li>
+            <li>Node.js , express.js</li>
+            <li>Python (Bot Development / Scripting)</li>
+        </ul>
+    </div>
+
+
+    <div class="ctx" id="Timezone">
+        <h3>My Timezone:</h3>
+        <p id="tz">Central European Time (CET) UTC+1</p>
+    </div>
+
+
+    <div id="Projects">
+        <div class="project">
+            <h3>Tester Checker</h3>
+            <p>
+            Unified dashboard for tracking tester stats across multiple Roblox communities 
+            (PVB, BRS, The Forge, GAG)
+            </p>
+            <a href="https://tester-checker.netlify.app">Live Demo</a>
+        </div>
+    
+
+        <div class="project">
+            <h3>Roblox Development</h3>
+            <p>
+                Built core systems and UI for experiences reaching 600,000+ visits 
+                and 340 peak CCU.
+            </p>
+            <p>Developer at <a href="https://www.roblox.com/de/communities/32406425/Mattts-Studio#!/about">Matt's Studio</a></p>
+        </div>
+
+
+        <div class="project">
+            <h3>Potato Discord Bot</h3>
+            <p>
+                A Discord bot that uses collectibles and progression to make servers more active.
+                Features included: inventory, trading system and server-wide leaderboard.
+            </p>
+
+            <p class="commands">
+                <code>!g</code> -- collect potatoes<br>
+                <code>!inventory</code> -- view inventory<br>
+                <code>!potatoleaderboard</code> -- leaderboard
+            </p>
+
+            <a href="https://potatobot.netlify.app">Website & Invite Link</a>
+        </div>
+
+    </div>
+    
+
+    <div class="project">
+    <h3>UI Test Showcase</h3>
+    <p>
+        A collection of UI prototypes and concepts built in Roblox Studio, showcasing my skills in UI design and development.
+    </p>
+
+    <a href="ui-showcase.html">View Showcase</a>
+    </div>
+
+    <section class="ctx" id="contact">
+    <h3>Contact Me</h3>
+    <p id="contact-info">Open to collaborations and projects. Send a message below:</p>
+
+
+    <form id="contact-form">
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" required>
+    <label for="msg">Message</label>
+    <textarea id="msg" name="message" required></textarea>
+    <button type="submit" id="submitBtn">Send Message</button>
+    <p id="status"></p>
+    <p class="info">(I usually respond within 24 hours)</p>
+    </form>
+
+    <script src="java/java.js"></script>
+        
+    </section>
+
+    
+</body>
+</html>
